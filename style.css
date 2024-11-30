@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #E0B1CB, #130714, #9F86C0, #5E54BE); /* Smooth gradient flowing top to bottom */
+    color: #231942; /* Deep maroon text */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+.introduction {
+    background: #ffffff; 
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* HEADER */
+.header-ira {
+    background: rgba(0, 0, 0, 0.6); 
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__link {
+    color: #dd9e95; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav__link:hover {
+    color: #c66869; 
+}
+
+.nav__toggle {
+    display: none;
+}
+
+/* MAIN */
+.main-ira {
+    padding: 20px;
+    text-align: center;
+}
+.Hero-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+/* HOME SECTION */
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.home__title {
+    font-size: 3em;
+    margin: 0;
+}
+
+.home__title-color {
+    color: #f3d7d4; 
+}
+
+.home__description {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    background: #6d2c2a; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #702a2a; 
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.about1 h1 {
+    color: #702a2a; 
+}
+
+.about1 p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* PROJECTS */
+.project-description {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #702a2a;
+}
+.images {
+    padding: 20px;
+}
+
+/* SKILLS */
+.skills {
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.skills__container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); 
+    color: white;
+}
+
+.contact-right form {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f3d7d4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dd9e95;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.send-message-btn {
+    background: linear-gradient(90deg, #702a2a, #6d2c2a); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-message-btn:hover {
+    background-color: #702a2a;
+}
+
+/* FOOTER */
+.footer {
+    background: rgba(0, 0, 0, 0.8); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer__title {
+    font-size: 1.5em;
+}
+
+.footer__social {
+    margin: 10px 0;
+}
+
+.footer__icon {
+    color: #dd9e95;
+    font-size: 1.5em;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer__icon:hover {
+    color: #c66869;
+}
+
+.footer__copy {
+    font-size: 0.9em;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: block;
+        color: white;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .skills__container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home__title {
+        font-size: 2em;
+    }
+
+    .home__description {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
